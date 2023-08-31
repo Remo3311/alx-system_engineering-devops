@@ -1,2 +1,2 @@
 #!/bim/bash
-la . .. /boot -la
+ls . .. /boot -la
