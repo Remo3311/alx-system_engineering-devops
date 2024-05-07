@@ -1,5 +1,7 @@
                                                 Postmortem: Web Stack Outage on May 6, 2024
 
+![image](https://github.com/Remo3311/alx-system_engineering-devops/assets/140193991/24b04624-d50f-48c8-afb9-b692fe67577f)
+
 
      Issue Summary:
 
@@ -23,6 +25,9 @@
 
 The root cause of the outage was traced back to a misconfiguration in the load balancer, which was inadvertently routing a disproportionate amount of traffic to certain backend servers. This resulted in overload and performance degradation for those servers, impacting overall system stability. The issue was resolved by adjusting the load balancer settings to evenly distribute traffic, alleviating the strain on individual servers and restoring normal service operation.
 
+![image](https://github.com/Remo3311/alx-system_engineering-devops/assets/140193991/680ead09-c8e3-4a37-be17-cd015639cda0)
+
+
    Corrective and Preventative Measures:
 
 To prevent similar outages in the future, the following corrective and preventative measures will be implemented:
@@ -30,6 +35,8 @@ To prevent similar outages in the future, the following corrective and preventat
 2. Enhanced Monitoring and Alerting: Enhance monitoring systems to provide real-time visibility into traffic distribution and server performance, enabling quicker detection and response to issues.
 3. Regular Load Testing: Conduct regular load testing to simulate high traffic scenarios and identify potential bottlenecks or misconfigurations before they impact production environments.
 4. Documentation and Training: Document load balancer configuration procedures and provide training to relevant teams to ensure proper configuration practices are followed in the future.
+
+![image](https://github.com/Remo3311/alx-system_engineering-devops/assets/140193991/17240f94-7ca1-4b07-a96e-b8476d51a972)
 
     The conclusion:
  The outage stemmed from a load balancer misconfiguration, resolved through adjustments. Proposed measures aim to prevent future incidents, underscoring the need for swift implementation.
