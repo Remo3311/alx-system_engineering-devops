@@ -1,16 +1,16 @@
 server {
-listen 80 default_server;
-listen [::]:80 default_server;
+    listen 80 default_server;
+    listen [::]:80 default_server;
 
 # Use IP of server as domain name
-server_name 100.25.155.139
+server_name 54.164.99.123
 
 # Customize HTTP response header
-add_header  X-Served-By 521160-web-01;
+add_header X-served-By 521160-web-01;
 
-# Serve /airbnb-onepage/ route from AirBnB_clone_v3
-location = /airbnb-onepage/ {
-proxy_pass http://127.0.0.1:5000/airbnb-onepage/;
+# Server /airbnb-onepage/ route on AirBnB_clone_v3
+location = /airbnb-onepage {
+ proxy_pass http://127.0.0.1:5000//airbnb-onepage/;
 }
 
 error_page 404 /404.html;
